@@ -1,0 +1,6 @@
+/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_facade/src/test/java/com/sfl/pms/api/internal/facade/test/AbstractFacadeActionRequestUnitTest.java
+/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_facade/src/test/java/com/sfl/pms/api/internal/facade/redirect/impl/PaymentProviderRedirectResultFacadeImplTest.java
+/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_facade/src/test/java/com/sfl/pms/api/internal/facade/test/AbstractFacadeUnitTest.java
+/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_facade/src/test/java/com/sfl/pms/api/internal/facade/order/impl/OrderPaymentFacadeImplTest.java
+/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_facade/src/test/java/com/sfl/pms/api/internal/facade/helper/FacadeImplTestHelper.java
+/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_facade/src/test/java/com/sfl/pms/api/internal/facade/notification/impl/PaymentProviderNotificationFacadeImplTest.java

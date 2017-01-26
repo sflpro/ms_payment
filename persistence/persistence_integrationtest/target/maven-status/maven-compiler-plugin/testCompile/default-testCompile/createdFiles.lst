@@ -1,0 +1,9 @@
+com/sfl/pms/persistence/repositories/payment/customer/method/CustomerPaymentMethodAuthorizationRequestRepositoryTest.class
+com/sfl/pms/persistence/repositories/payment/common/order/OrderPaymentRequestRepositoryTest.class
+com/sfl/pms/persistence/repositories/payment/customer/method/CustomerPaymentMethodRepositoryTest.class
+com/sfl/pms/persistence/repositories/payment/notification/PaymentProviderNotificationRepositoryTest.class
+com/sfl/pms/persistence/repositories/payment/common/PaymentRepositoryTest.class
+com/sfl/pms/persistence/repositories/payment/notification/PaymentProviderNotificationRequestRepositoryTest.class
+com/sfl/pms/persistence/repositories/payment/redirect/PaymentProviderRedirectResultRepositoryTest.class
+com/sfl/pms/persistence/repositories/order/OrderRepositoryTest.class
+com/sfl/pms/persistence/repositories/AbstractRepositoryTest.class

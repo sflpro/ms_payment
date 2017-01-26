@@ -1,0 +1,13 @@
+com/sfl/pms/api/internal/client/rest/redirect/impl/PaymentProviderRedirectResultResourceClientImpl$1.class
+com/sfl/pms/api/internal/client/rest/notification/PaymentProviderNotificationResourceClient.class
+com/sfl/pms/api/internal/client/rest/order/impl/OrderPaymentResourceClientImpl$3.class
+com/sfl/pms/api/internal/client/rest/order/impl/OrderPaymentResourceClientImpl.class
+com/sfl/pms/api/internal/client/rest/order/impl/OrderPaymentResourceClientImpl$1.class
+com/sfl/pms/api/internal/client/rest/order/OrderPaymentResourceClient.class
+com/sfl/pms/api/internal/client/rest/common/AbstractResourceClient.class
+com/sfl/pms/api/internal/client/rest/notification/impl/PaymentProviderNotificationResourceClientImpl$1.class
+com/sfl/pms/api/internal/client/rest/redirect/PaymentProviderRedirectResultResourceClient.class
+com/sfl/pms/api/internal/client/rest/notification/impl/PaymentProviderNotificationResourceClientImpl.class
+com/sfl/pms/api/internal/client/rest/redirect/impl/PaymentProviderRedirectResultResourceClientImpl$2.class
+com/sfl/pms/api/internal/client/rest/order/impl/OrderPaymentResourceClientImpl$2.class
+com/sfl/pms/api/internal/client/rest/redirect/impl/PaymentProviderRedirectResultResourceClientImpl.class

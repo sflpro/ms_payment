@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <parent>
+        <groupId>com.sfl.ms.payment.scheduler</groupId>
+        <artifactId>scheduler</artifactId>
+        <version>1.0</version>
+    </parent>
+    <packaging>war</packaging>
+    <name>Scheduler Web</name>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>scheduler_web</artifactId>
+    <version>1.0</version>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sfl.ms.payment.scheduler</groupId>
+            <artifactId>scheduler_impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sfl.ms.payment.queue.consumer</groupId>
+            <artifactId>queue_consumer_impl</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>docker</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-war-plugin</artifactId>
+                        <configuration>
+                            <warName>ROOT</warName>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>com.spotify</groupId>
+                        <artifactId>docker-maven-plugin</artifactId>
+                        <configuration>
+                            <registryUrl>${docker.registry.url}</registryUrl>
+                            <serverId>${docker.registry.url}</serverId>
+                            <pushImage>true</pushImage>
+                            <baseImage>tomcat:8.0-jre8</baseImage>
+                            <imageName>${docker.registry.url}/paymentms-scheduler</imageName>
+                            <maintainer>CoolMonkey Team</maintainer>
+                            <runs>
+                                <run>rm -rf /usr/local/tomcat/webapps/ROOT</run>
+                                <run>rm -rf /usr/local/tomcat/webapps/docs</run>
+                                <run>rm -rf /usr/local/tomcat/webapps/examples</run>
+                                <run>rm -rf /usr/local/tomcat/webapps/host-manager</run>
+                                <run>rm -rf /usr/local/tomcat/webapps/manager</run>
+                            </runs>
+                            <imageTags>
+                                <imageTag>latest</imageTag>
+                                <imageTag>${bamboo.deploy.release}</imageTag>
+                            </imageTags>
+                            <resources>
+                                <resource>
+                                    <targetPath>/usr/local/tomcat/webapps</targetPath>
+                                    <directory>${project.build.directory}/</directory>
+                                    <include>ROOT.war</include>
+                                </resource>
+                                <resource>
+                                    <targetPath>/root/coolmonkey/</targetPath>
+                                    <directory>
+                                        /opt/coolmonkey-docker/mount/app/paymentms-scheduler/${project.environment}/
+                                    </directory>
+                                    <include>*</include>
+                                </resource>
+                                <resource>
+                                    <targetPath>/root/coolmonkey/</targetPath>
+                                    <directory>/opt/coolmonkey-docker/mount/app/common/${project.environment}/
+                                    </directory>
+                                    <include>*</include>
+                                </resource>
+                                <resource>
+                                    <targetPath>/root/coolmonkey/</targetPath>
+                                    <directory>/opt/coolmonkey-docker/tools/newrelic/</directory>
+                                    <include>newrelic.jar</include>
+                                </resource>
+                            </resources>
+                            <exposes>8080</exposes>
+                            <entryPoint>["catalina.sh", "run"]</entryPoint>
+                        </configuration>
+                    </plugin>
+                </plugins>
+                <pluginManagement>
+                    <plugins>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-war-plugin</artifactId>
+                            <version>${maven.war.plugin.version}</version>
+                        </plugin>
+                        <plugin>
+                            <groupId>com.spotify</groupId>
+                            <artifactId>docker-maven-plugin</artifactId>
+                            <version>${docker.maven.plugin.version}</version>
+                        </plugin>
+                    </plugins>
+                </pluginManagement>
+            </build>
+        </profile>
+    </profiles>
+
+    <description>
+        Scheduler Web sub module represents runner for scheduler layer of PMS project.
+    </description>
+</project>

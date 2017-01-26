@@ -1,0 +1,1 @@
+Testing push notifications templating, first name - ${firstName}, last name - ${lastName}

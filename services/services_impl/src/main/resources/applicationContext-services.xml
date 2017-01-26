@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd"
+       default-lazy-init="true" default-autowire="byName">
+
+    <import resource="applicationContext-persistence-jpa.xml"/>
+    <import resource="applicationContext-externalclients-payment.xml"/>
+
+    <!--Load application properties-->
+    <bean id="appProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="locations">
+            <list>
+                <value>classpath:ms_payment.properties</value>
+                <value>file:${user.home}/ms_payment.properties</value>
+                <value>file:${user.home}/coolmonkey-commons.properties</value>
+                <value>file:${user.home}/coolmonkey/ms_payment.properties</value>
+                <value>file:${user.home}/coolmonkey/coolmonkey-commons.properties</value>
+            </list>
+        </property>
+        <property name="ignoreResourceNotFound" value="true"/>
+    </bean>
+
+    <bean id="passwordEncoder" class="org.springframework.security.crypto.password.StandardPasswordEncoder"/>
+
+    <!-- Build HTTP client  -->
+    <bean id="httpClientBuilderAdapter" class="com.sfl.pms.services.http.impl.HttpClientBuilderAdapterImpl">
+    </bean>
+
+    <bean id="httpClient" factory-bean="httpClientBuilderAdapter" factory-method="build"/>
+
+    <!-- Create task order state mutation listener for external updated -->
+    <bean id="orderStateMutationNotifierEventListener" lazy-init="false"
+          class="com.sfl.pms.services.order.impl.external.OrderStateMutationExternalNotifierEventProcessingServiceImpl">
+        <property name="orderStateMutationExternalNotifierService"
+                  ref="#{appProperties['order.mutation.notifier.type']}"/>
+    </bean>
+
+    <context:annotation-config/>
+    <context:component-scan base-package="com.sfl.pms.services.*"/>
+
+</beans>

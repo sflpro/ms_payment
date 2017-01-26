@@ -1,0 +1,22 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.sfl.ms.payment</groupId>
+        <artifactId>payment</artifactId>
+        <version>1.0</version>
+    </parent>
+    <groupId>com.sfl.ms.payment.scheduler</groupId>
+    <artifactId>scheduler</artifactId>
+    <packaging>pom</packaging>
+    <name>Scheduler</name>
+    <version>1.0</version>
+    <modules>
+        <module>scheduler_core</module>
+        <module>scheduler_impl</module>
+        <module>scheduler_web</module>
+        <module>scheduler_integrationtest</module>
+    </modules>
+    <description>Scheduler sub module represents scheduling layer of PMS project.</description>
+</project>	

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>externalclients</artifactId>
+        <groupId>com.sfl.ms.payment.externalclients</groupId>
+        <version>1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <artifactId>externalclients_payment_integrationtest</artifactId>
+    <name>Externalclients Payment Integration Test</name>
+    <version>1.0</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sfl.ms.payment.externalclients</groupId>
+            <artifactId>externalclients_payment</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <description>
+        Externalclients Payment integration test sub module represents test suites for payment web service client layer
+        of PMS project.
+    </description>
+
+</project>

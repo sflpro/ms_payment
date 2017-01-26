@@ -1,0 +1,5 @@
+com/sfl/pms/queue/producer/payment/common/order/OrderPaymentRequestProcessingProducerService.class
+com/sfl/pms/queue/producer/payment/notification/PaymentProviderNotificationProcessingQueueProducerService.class
+com/sfl/pms/queue/producer/payment/redirect/PaymentProviderRedirectResultProcessingQueueProducerService.class
+com/sfl/pms/queue/producer/payment/customer/method/PaymentMethodAuthorizationRequestProcessingProducerService.class
+com/sfl/pms/queue/producer/payment/customer/method/PaymentMethodRemovalRequestProcessingProducerService.class

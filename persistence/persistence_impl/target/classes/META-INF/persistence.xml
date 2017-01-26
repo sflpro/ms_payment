@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://java.sun.com/xml/ns/persistence"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+             version="2.0">
+    <persistence-unit name="com_sfl_pms_persistence_unit" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <!-- User -->
+        <class>com.sfl.pms.services.customer.model.Customer</class>
+        <!-- Order -->
+        <class>com.sfl.pms.services.order.model.Order</class>
+        <class>com.sfl.pms.services.order.model.OrderStateChangeHistoryRecord</class>
+        <class>com.sfl.pms.services.order.model.payment.OrderPaymentChannel</class>
+        <class>com.sfl.pms.services.order.model.payment.provider.OrderProviderPaymentChannel</class>
+
+        <!-- Payment settings -->
+        <class>com.sfl.pms.services.payment.settings.model.PaymentProviderSettings</class>
+        <class>com.sfl.pms.services.payment.settings.model.adyen.AdyenPaymentSettings</class>
+
+        <!-- Payment -->
+        <class>com.sfl.pms.services.payment.common.model.Payment</class>
+        <class>com.sfl.pms.services.payment.common.model.PaymentResult</class>
+        <class>com.sfl.pms.services.payment.common.model.adyen.AdyenPaymentResult</class>
+        <class>com.sfl.pms.services.payment.common.model.PaymentStateChangeHistoryRecord</class>
+        <class>com.sfl.pms.services.payment.common.model.order.OrderPayment</class>
+        <class>com.sfl.pms.services.payment.common.model.auth.CustomerPaymentMethodAuthorizationPayment</class>
+        <class>com.sfl.pms.services.payment.common.model.channel.PaymentProcessingChannel</class>
+        <class>com.sfl.pms.services.payment.common.model.channel.ProvidedPaymentMethodProcessingChannel</class>
+        <class>com.sfl.pms.services.payment.common.model.channel.EncryptedPaymentMethodProcessingChannel</class>
+        <class>com.sfl.pms.services.payment.common.model.channel.CustomerPaymentMethodProcessingChannel</class>
+        <class>com.sfl.pms.services.payment.common.model.channel.DeferredPaymentMethodProcessingChannel</class>
+
+        <!-- Payment method group -->
+        <class>com.sfl.pms.services.payment.method.model.PaymentMethodDefinition</class>
+        <class>com.sfl.pms.services.payment.method.model.individual.IndividualPaymentMethodDefinition</class>
+        <class>com.sfl.pms.services.payment.method.model.group.GroupPaymentMethodDefinition</class>
+
+        <!-- Order payment request -->
+        <class>com.sfl.pms.services.payment.common.model.order.request.OrderPaymentRequest</class>
+        <class>com.sfl.pms.services.payment.common.model.order.request.OrderRequestPaymentMethod</class>
+        <class>com.sfl.pms.services.payment.common.model.order.request.OrderRequestCustomerPaymentMethod</class>
+        <class>com.sfl.pms.services.payment.common.model.order.request.OrderRequestEncryptedPaymentMethod</class>
+        <class>com.sfl.pms.services.payment.common.model.order.request.OrderRequestRedirectPaymentMethod</class>
+
+        <!-- Customer payment method -->
+        <class>com.sfl.pms.services.payment.customer.method.model.CustomerPaymentMethod</class>
+        <class>com.sfl.pms.services.payment.customer.method.model.CustomerCardPaymentMethod</class>
+        <class>com.sfl.pms.services.payment.customer.method.model.CustomerBankPaymentMethod</class>
+
+        <!-- Customer payment method provider information -->
+        <class>com.sfl.pms.services.payment.customer.method.model.CustomerPaymentMethodProviderInformation</class>
+        <class>com.sfl.pms.services.payment.customer.method.model.adyen.CustomerPaymentMethodAdyenInformation</class>
+
+        <!-- Customer payment information -->
+        <class>com.sfl.pms.services.payment.customer.information.model.CustomerPaymentProviderInformation</class>
+        <class>com.sfl.pms.services.payment.customer.information.model.adyen.CustomerAdyenInformation</class>
+
+        <!-- Customer payment method authorization request -->
+        <class>
+            com.sfl.pms.services.payment.customer.method.model.authorization.CustomerPaymentMethodAuthorizationRequest
+        </class>
+        <class>
+            com.sfl.pms.services.payment.customer.method.model.authorization.CustomerEncryptedPaymentMethodAuthorizationRequest
+        </class>
+        <class>
+            com.sfl.pms.services.payment.customer.method.model.authorization.CustomerProvidedPaymentMethodAuthorizationRequest
+        </class>
+
+        <!-- Payment provider notification -->
+        <class>com.sfl.pms.services.payment.notification.model.PaymentProviderNotification</class>
+        <class>com.sfl.pms.services.payment.notification.model.adyen.AdyenPaymentProviderNotification</class>
+        <class>com.sfl.pms.services.payment.notification.model.PaymentProviderNotificationRequest</class>
+
+        <!-- Payment provider redirect result -->
+        <class>com.sfl.pms.services.payment.redirect.model.PaymentProviderRedirectResult</class>
+        <class>com.sfl.pms.services.payment.redirect.model.adyen.AdyenRedirectResult</class>
+
+    </persistence-unit>
+</persistence>

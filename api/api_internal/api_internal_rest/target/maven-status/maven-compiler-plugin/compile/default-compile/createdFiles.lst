@@ -1,0 +1,6 @@
+com/sfl/pms/api/internal/rest/resources/maintanance/HeartBeatResource.class
+com/sfl/pms/api/internal/rest/resources/notification/PaymentProviderNotificationResource.class
+com/sfl/pms/api/internal/rest/resources/redirect/PaymentProviderRedirectResultResource.class
+com/sfl/pms/api/internal/rest/exception/AnonymisedApplicationException.class
+com/sfl/pms/api/internal/rest/web/filter/ApplicationExceptionHandlingFilter.class
+com/sfl/pms/api/internal/rest/resources/order/OrderPaymentResource.class
