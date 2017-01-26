@@ -48,4 +48,8 @@
         <level value="ERROR"/>
     </logger>
 
+    <logger name="org.hibernate.*">
+        <level value="ERROR"/>
+    </logger>
+
 </configuration>
