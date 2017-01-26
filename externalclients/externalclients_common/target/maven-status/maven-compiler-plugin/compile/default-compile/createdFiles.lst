@@ -1,4 +1,0 @@
-com/sfl/pms/externalclients/common/communicator/AbstractApiCommunicatorImpl.class
-com/sfl/pms/externalclients/common/http/rest/RestClientImpl.class
-com/sfl/pms/externalclients/common/http/exception/ExternalClientRuntimeException.class
-com/sfl/pms/externalclients/common/http/rest/RestClient.class

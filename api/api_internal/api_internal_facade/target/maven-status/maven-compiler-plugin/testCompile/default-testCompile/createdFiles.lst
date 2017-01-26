@@ -1,6 +1,0 @@
-com/sfl/pms/api/internal/facade/helper/FacadeImplTestHelper.class
-com/sfl/pms/api/internal/facade/test/AbstractFacadeActionRequestUnitTest.class
-com/sfl/pms/api/internal/facade/notification/impl/PaymentProviderNotificationFacadeImplTest.class
-com/sfl/pms/api/internal/facade/test/AbstractFacadeUnitTest.class
-com/sfl/pms/api/internal/facade/order/impl/OrderPaymentFacadeImplTest.class
-com/sfl/pms/api/internal/facade/redirect/impl/PaymentProviderRedirectResultFacadeImplTest.class

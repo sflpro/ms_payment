@@ -1,5 +1,0 @@
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/queue/queue_producer/queue_producer_core/src/main/java/com/sfl/pms/queue/producer/payment/redirect/PaymentProviderRedirectResultProcessingQueueProducerService.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/queue/queue_producer/queue_producer_core/src/main/java/com/sfl/pms/queue/producer/payment/customer/method/PaymentMethodAuthorizationRequestProcessingProducerService.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/queue/queue_producer/queue_producer_core/src/main/java/com/sfl/pms/queue/producer/payment/notification/PaymentProviderNotificationProcessingQueueProducerService.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/queue/queue_producer/queue_producer_core/src/main/java/com/sfl/pms/queue/producer/payment/common/order/OrderPaymentRequestProcessingProducerService.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/queue/queue_producer/queue_producer_core/src/main/java/com/sfl/pms/queue/producer/payment/customer/method/PaymentMethodRemovalRequestProcessingProducerService.java

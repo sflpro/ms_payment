@@ -1,7 +1,0 @@
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/order/OrderPaymentResourceClient.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/redirect/impl/PaymentProviderRedirectResultResourceClientImpl.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/common/AbstractResourceClient.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/order/impl/OrderPaymentResourceClientImpl.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/notification/impl/PaymentProviderNotificationResourceClientImpl.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/notification/PaymentProviderNotificationResourceClient.java
-/Users/rubendilanyan/Development/Projects/SFL/opensource/sfl_ms_payment/api/api_internal/api_internal_client/src/main/java/com/sfl/pms/api/internal/client/rest/redirect/PaymentProviderRedirectResultResourceClient.java

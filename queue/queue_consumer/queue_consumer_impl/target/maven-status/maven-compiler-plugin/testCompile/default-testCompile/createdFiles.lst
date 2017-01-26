@@ -1,6 +1,0 @@
-com/sfl/pms/queue/consumer/payment/customer/method/impl/PaymentMethodRemovalRequestProcessingConsumerServiceImplTest.class
-com/sfl/pms/queue/consumer/test/AbstractQueueConsumerUnitTest.class
-com/sfl/pms/queue/consumer/payment/common/order/impl/OrderPaymentRequestProcessingConsumerServiceImplTest.class
-com/sfl/pms/queue/consumer/payment/redirect/impl/PaymentProviderRedirectResultProcessingQueueConsumerServiceImplTest.class
-com/sfl/pms/queue/consumer/payment/customer/method/impl/PaymentMethodAuthorizationRequestProcessingConsumerServiceImplTest.class
-com/sfl/pms/queue/consumer/payment/notification/impl/PaymentProviderNotificationProcessingQueueConsumerServiceImplTest.class

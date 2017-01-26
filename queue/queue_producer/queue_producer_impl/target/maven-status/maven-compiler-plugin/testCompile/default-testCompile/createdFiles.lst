@@ -1,6 +1,0 @@
-com/sfl/pms/queue/producer/payment/customer/method/impl/PaymentMethodAuthorizationRequestProcessingProducerServiceImplTest.class
-com/sfl/pms/queue/producer/payment/notification/impl/PaymentProviderNotificationProcessingQueueProducerServiceImplTest.class
-com/sfl/pms/queue/producer/payment/customer/method/impl/PaymentMethodRemovalRequestProcessingProducerServiceImplTest.class
-com/sfl/pms/queue/producer/payment/test/AbstractQueueProducerUnitTest.class
-com/sfl/pms/queue/producer/payment/redirect/impl/PaymentProviderRedirectResultProcessingQueueProducerServiceImplTest.class
-com/sfl/pms/queue/producer/payment/common/order/impl/OrderPaymentRequestProcessingProducerServiceImplTest.class

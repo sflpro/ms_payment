@@ -1,5 +1,0 @@
-com/sfl/pms/scheduler/jobs/payment/method/CustomerPaymentMethodsSynchronizationJobImpl.class
-com/sfl/pms/scheduler/jobs/payment/method/CustomerPaymentMethodsSynchronizationJobImpl$CustomersSynchronizationAggregatedCounts.class
-com/sfl/pms/scheduler/jobs/payment/method/CustomerPaymentMethodsSynchronizationJobImpl$CustomersSynchronizationBatchResult.class
-com/sfl/pms/scheduler/jobs/payment/method/CustomerPaymentMethodsSynchronizationJobImpl$CustomerSynchronizationCommand.class
-com/sfl/pms/scheduler/triggers/payment/method/impl/CustomerPaymentMethodsSynchronizationJobTriggerImpl.class

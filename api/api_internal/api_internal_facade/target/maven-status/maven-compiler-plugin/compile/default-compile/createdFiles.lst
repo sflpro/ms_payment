@@ -1,8 +1,0 @@
-com/sfl/pms/api/internal/facade/notification/PaymentProviderNotificationFacade.class
-com/sfl/pms/api/internal/facade/order/impl/OrderPaymentFacadeImpl$1.class
-com/sfl/pms/api/internal/facade/order/OrderPaymentFacade.class
-com/sfl/pms/api/internal/facade/notification/exception/InvalidPaymentProviderNotificationsTokenException.class
-com/sfl/pms/api/internal/facade/order/impl/OrderPaymentFacadeImpl.class
-com/sfl/pms/api/internal/facade/redirect/impl/PaymentProviderRedirectResultFacadeImpl.class
-com/sfl/pms/api/internal/facade/redirect/PaymentProviderRedirectResultFacade.class
-com/sfl/pms/api/internal/facade/notification/impl/PaymentProviderNotificationFacadeImpl.class
