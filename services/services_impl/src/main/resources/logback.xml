@@ -44,7 +44,7 @@
         <level value="ERROR"/>
     </logger>
 
-    <logger name="org.hibernate.engine.StatefulPersistenceContext">
+    <logger name="org.springframework.*">
         <level value="ERROR"/>
     </logger>
 
