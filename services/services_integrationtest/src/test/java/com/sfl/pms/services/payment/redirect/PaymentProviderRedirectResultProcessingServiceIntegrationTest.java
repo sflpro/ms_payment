@@ -14,6 +14,7 @@ import com.sfl.pms.services.payment.redirect.model.PaymentProviderRedirectResult
 import com.sfl.pms.services.payment.redirect.model.adyen.AdyenRedirectResult;
 import com.sfl.pms.services.test.AbstractServiceIntegrationTest;
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -63,6 +64,7 @@ public class PaymentProviderRedirectResultProcessingServiceIntegrationTest exten
         assertProcessedAdyenRedirectResult(adyenRedirectResult, payment);
     }
 
+    @Ignore
     @Test
     public void testProcessPaymentProviderRedirectResultForPaymentMethodAuthorizationPayment() {
         // Prepare data

@@ -36,7 +36,7 @@
     </appender>
 
     <root>
-        <level value="INFO"/>
+        <level value="ERROR"/>
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="STDERR"/>
     </root>
