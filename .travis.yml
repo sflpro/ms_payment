@@ -5,8 +5,8 @@ cache:
           directories:
                   - .autoconf
                   - $HOME/.m2
-script: mvn clean install -q
-
+install: mvn clean install -DskipTests=true  -q
+script: mvn package -q
 
 
 
