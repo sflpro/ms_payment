@@ -38,7 +38,6 @@
     <root>
         <level value="ERROR"/>
         <appender-ref ref="STDOUT"/>
-        <appender-ref ref="STDERR"/>
     </root>
 
     <logger name="com.sfl.pms.api.amqp.rpc.impl.RPCQueueMessageHandlerImpl">
