@@ -2,14 +2,14 @@
 [![Build Status](https://travis-ci.org/sflpro/ms_payment.svg?branch=master)](https://travis-ci.org/sflpro/ms_payment)
 # Payment Microservice
 
-The payment microservice is a separatable deployable component intended for processing payment transcations.
+The payment microservice is a separately deployable component intended for processing payment transcations.
 It provides high level abstraction layer on top of the actual payment providers by exposing provider agnostic  API. Currently the microservice supports following payment providers :
 * [Adyen](https://www.adyen.com/)
 
-The main features are :
+The main features include :
 * Payments implemented via a redirect to the payment provider platform
 * Direct payments by using client side ecnryption feature exposed by the payment provider
-* Secure recurring/saved payment methods utilizing
+* Secure recurring/saved payment methods
 * Payment transactions history
 
 ## Microservice API
